@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <DefineConstants>FABLE_COMPILER</DefineConstants>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="paket.references" />
+        <None Include="index.scss" />
+        <None Include="index.html" />
+        <Compile Include="Extensions.fs" />
+        <Compile Include="LocalStorage.fs" />
+        <Compile Include="Navigation.fs" />
+        <Compile Include="Components\Navbar\Types.fs" />
+        <Compile Include="Components\Navbar\State.fs" />
+        <Compile Include="Components\Navbar\View.fs" />
+        <Compile Include="Login\Types.fs" />
+        <Compile Include="Login\State.fs" />
+        <Compile Include="Login\View.fs" />
+        <Compile Include="Dashboard\Types.fs" />
+        <Compile Include="Dashboard\State.fs" />
+        <Compile Include="Dashboard\View.fs" />
+        <Compile Include="Teabags\Types.fs" />
+        <Compile Include="Teabags\State.fs" />
+        <Compile Include="Teabags\View.fs" />
+        <Compile Include="Teabag\Types.fs" />
+        <Compile Include="Teabag\State.fs" />
+        <Compile Include="Teabag\View.fs" />
+        <Compile Include="ClientTypes.fs" />
+        <Compile Include="State.fs" />
+        <Compile Include="Index.fs" />
+        <Compile Include="App.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Shared\Shared.fsproj" />
+    </ItemGroup>
+    <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
